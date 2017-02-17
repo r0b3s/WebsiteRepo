@@ -1,0 +1,86 @@
+<!DOCTYPE html><!--FIX SIZING ISSUE ON MOBILE DEVICE-->
+<html>
+    <head>
+        <title>MARITZ LAB</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Quicksand:300,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <meta name="viewport" content="width=device-width", initial-scale=1.0"> />
+        
+    </head>
+    <body>
+        <div class="MainMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="openings.html">Openings</a></li>
+                <li><a href="links.html">Links</a></li>
+                <li class="MenuName">Maritz Lab</li>
+        </div>
+        
+        <div class="MobileMenu" >
+            <div class="hiddenText">
+                <div class="button"> <p><span style="cursor:pointer" onclick="openNav()">&#9776</span></p>
+                </div>
+                <div class="MenuHeading"><p>Maritz Lab</p>
+                </div>
+            </div>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+                </a>
+                <div class="overlay-content">
+                    <a href="index.html">Home</a>
+                    <a href="research.html">Research</a>
+                    <a href="publications.html">Publications</a>
+                    <a href="people.html">People</a>
+                    <a href="openings.html">Openings</a>
+                    <a href="links.html">Links</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="PageHeader">
+            <h1>News Archive</h1>
+        </div>
+        
+    <div class="NewsTableOuter">
+        <h3>January 2017</h3>
+        <div class="NewsTable">
+        <div class="table-row">
+            <div class="newsimg" > <img src="images/News/Bonamonzi.jpg" alt="13th HAA Conference"></div>
+            <div class='newsitem'>
+                <h3><span style= "color: CadetBlue; font-weight: bold">Maritz Lab at HAA</span></h3>
+                <p>Bryan, Jody, JJ, and Jannie headed to Zululand in January for the <a href="http://africanherpetology.org/docs/13th_HAAConference.html">
+                HAA meeting</a>. Jody and JJ gave their first conference talks and both were well-received. Bryan was on the organising committee and chaired 
+                several sessions during the meeting. Overall, a very smooth and enjoyable conference. As always, the meeting was rich with ideas and old friendships. </p>
+            </div>
+        </div>
+        </div>
+    </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    <script>
+    function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    }
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+
+    
+    </body>
+    <footer>
+        <p id="footer">Dr. Bryan Maritz | University of the Western Cape | <a href="mailto: bmaritz@uwc.ac.za" target=_blank>bmaritz[at]uwc.ac.za </a> | +27(021)9592313
+        <br> New Life Sciences Building - Core 2, Office 4.101 | Bellville, South Africa 7535 
+            <br><span style="color:CadetBlue"><b>&copy 2017 Maritz Lab. </span></b></p>
+    </footer>
+</html>
