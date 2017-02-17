@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MARITZ LAB</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Quicksand:400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <meta name="viewport" content="width=device-width", initial-scale=1.0, maximum-scale=1.0, user-scalable="no"> />
+    </head>
+    <body>
+        <div class="MainMenu">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="openings.html">Openings</a></li>
+                <li><a href="links.html">Links</a></li>
+                <li class="MenuName">Maritz Lab</li>
+            </div>
+            
+        <div class="MobileMenu" >
+            <div class="hiddenText">
+                <div class="button"> <p><span style="cursor:pointer" onclick="openNav()">&#9776</span></p>
+                </div>
+                <div class="MenuHeading"><p>Maritz Lab</p>
+                </div>
+            </div>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+                </a>
+                <div class="overlay-content">
+                    <a class="active" href="index.html">Home</a>
+                    <a href="research.html">Research</a>
+                    <a href="publications.html">Publications</a>
+                    <a href="people.html">People</a>
+                    <a href="openings.html">Openings</a>
+                    <a href="links.html">Links</a>
+                </div>
+            </div>
+        </div>
+            
+            <div class="Front">
+                        <img src="images/AfricaPhotographyCorletteWessels2.jpg" alt="Naja nivea, Photo credit: Corlette Wessels">
+            </div>
+            
+                <!--<div class="frontimages">
+                    <img src="LukeKemp.jpg" alt="Dasypeltis scabra Photo credit: Luke Kemp"></div>
+                <div class="frontimages">
+                    <img src="LukeKemp.crucifer.jpg" alt="P. crucifer Photo credit: Luke Kemp"></div>-->
+                    
+
+    
+        <div class="home">
+            <h1> The Maritz Lab</h1>
+            <h2> Department of Biodiversity and Conservation Biology<br> at <br> University of the Western Cape</h2>
+            
+            <div class="welcome"></div>
+            <span style="text-align:left"><h3> <b>Welcome to the Maritz Lab at UWC</b> </span></h3>
+            <p>Our research seeks to understand the functional roles of snakes in African ecosystems. We have several ongoing projects that address
+                    questions regarding snake natural history, ecology, communities, and conservation. Our interests and questions span a number of
+                    study systems. We have active study sites at several nature reserves around the country including Koeberg, Benfontein, Tswalu,
+                    and Kruger. Several projects in the lab address the spatial and foraging ecology of snakes as well as the population dynamics of
+                    snakes and their prey. We utilize a number of approaches to collect the data required to answer these questions. Our approaches include
+                    intensive sampling in the field using funnel traps, cover boards, and radio-telemetry which are fed into mark-recapture analyses.
+                    Other projects are exclusively computational and seek to model the distribution of a species or to analyze citizen-collected data. 
+                    While our interest extends to all snakes species, currently, our attention has been focused on Cape Cobra <i>Naja nivea</i>, Boomslang
+                    <i>Dispholidus typus</i>, Puff Adder <i>Bitis arietans</i>), whip snakes (<i>Psammophis spp.</i>, Rhombic Egg-eater (<i>Dasypeltis
+                    scabra</i>), and Plain Mountain Adder (<i>Bitis inornata</i>).
+                    <br><br>
+                    For more information, check out our <a href="research.html">research page.</a></p>
+            </div>
+        </div>
+        
+    
+    <div class="NewsTableOuter">
+        <h2><b>Recent News</b></h2>
+        <div class="NewsTable">
+        <div class="table-row">
+            <div class="newsimg"> <img src="images/news/Bonamonzi.jpg" alt="13th HAA Conference"></div>
+            <div class='newsitem'>
+                <h2><span style= "color: CadetBlue; font-weight: bold">Maritz Lab at HAA</span></h2>
+                <p>Bryan, Jody, JJ, and Jannie spent several days in Zululand for the <a href="http://africanherpetology.org/docs/13th_HAAConference.html">
+                HAA meeting</a>. Jody and JJ gave their first conference talks and both were well-received. Bryan dedicated time to organising the meeting, chairing 
+                several sessions, and presenting the framework for the Sociable Weaver-Cape Cobra-Boomslang project. Overall, a very smooth and enjoyable conference.
+                As always, the meeting was rich with ideas and old friendships. </p>
+            <p id="newslink"><a href="NewsArchive.html"> Previous News Stories...</a></p>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <script>
+    function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    }
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+    
+    </body>
+    <footer>
+        <p>Dr. Bryan Maritz | University of the Western Cape | <a href="mailto: bmaritz@uwc.ac.za" target=_blank>bmaritz[at]uwc.ac.za </a> | +27(021)959-2313
+        <br> New Life Sciences Building - Core 2, Office 4.101 | Bellville, South Africa 7535 
+            <br><span style="color:CadetBlue"><b>&copy 2017 Maritz Lab. </span></b></p>
+    </footer>
+</html>
