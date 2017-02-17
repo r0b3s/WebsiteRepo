@@ -1,0 +1,549 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    -webkit-text-size-adjust: auto;
+}
+
+html{
+    font-size: 17px;
+}
+
+img {
+        border-radius: 20px;
+}
+
+.PageHeader {
+    margin: auto;
+    width: 88%;
+    font-weight: normal;
+    padding-top: 1.0em;
+    color: black;
+}
+
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight:normal;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-weight:normal;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+
+.home {
+    text-align: center;
+    z-index: -3;
+    margin: auto;
+    height: auto;
+    width: 76%;
+    padding:1em;
+    margin-bottom: 4em;
+}
+.home h1 {
+    font-size: 3.9em;
+    font-weight: normal;
+}
+.welcome {
+    margin-top: 8em;
+}
+/*Font Responsiveness*/
+@media screen and (max-width: 1440px) {
+    html {
+        font-size: 15.5px;
+    }
+    .PageHeader {
+        padding-top: 1.7em;
+    }
+    .welcome {
+     margin-top: 6em;
+    }
+}
+
+@media screen and (max-width: 1022px) {
+    html {
+        font-size: 14px;
+    }
+
+    .PageHeader {
+        padding-top: 2.3em;
+    }
+    .home h1 {
+        font-size: 3em;
+    }
+    home h3 {
+        font-size: 1.2em;
+    }
+    
+    .welcome {
+        margin-top: 2em;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    html{
+        font-size: 12px;
+    }
+    .PageHeader {
+        padding-top: 2.8em;
+    }
+    .home h1 {
+        font-size: 2.8em;
+    }
+    .home h2 {
+        font-size: 1.2em;
+    }
+    .welcome {
+     margin-top: 2em;
+    }
+}
+
+
+
+
+
+
+.NewsTableOuter {
+    width: 76%;
+    margin: auto;
+    height: auto;
+    border: 7px ridge CadetBlue;
+    padding:1em;
+}
+
+.NewsTable {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    display: table;
+}
+
+.newsimg {
+    height: 250px;
+    text-align:center;
+    padding: 0.5em 0;
+}
+
+.newsimg img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+.newsitem {
+    width: 60%;
+    padding: 0.5em 1em 0 0 ;
+}
+
+#newslink {
+    float: right;
+    padding-top: 2em;
+}
+#ProfileHeader {
+    padding-bottom: 1em;
+}
+.profiles {
+    width: 80%;
+    margin: auto;
+    height: auto;
+    /*border-collapse: collapse;*/
+}
+
+.profilesinner{
+    width: 100%;
+    margin: auto;
+    height: auto;
+    display: table;
+}
+
+.linklist {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    display: table;
+}
+
+.profiles h2{
+    font-weight: bold;
+}
+
+.profiles h3 {
+    color: CadetBlue;
+    font-weight: bold;
+}
+
+.left, .right, .links, .iframe, .newsimg, .newsitem{
+    display: table-cell;
+    vertical-align: top;
+}
+
+.table-row{
+  display: table-row;
+}
+
+.left {
+    height: 250px;
+    text-align: center;
+    padding-bottom: 2.8em;
+}
+
+.left img{
+    max-width: 100%;
+    max-height: 100%;
+    height:auto;
+}
+
+.right{
+    width: 60%;
+    padding-left: 2%;
+    padding-bottom: 2.3em;
+}
+.links{
+    padding: 1em;
+}
+
+.iframe {
+    width: 300px;
+    text-align: right;
+    padding: 1em 1em 1em 0;
+    }
+
+.Front {
+    width: 78%;
+    height: auto;
+    display: block;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    z-index:-1;
+
+
+    /*box-shadow: black 10px;*/
+}
+
+.Front img {
+    border: solid black;
+    border-radius: 0;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index:1;
+    box-shadow: -8px 8px 5px black;
+     -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(20%, transparent), to(rgba(255, 255, 255, 0.5)));
+
+
+
+}
+
+
+
+/*Responsivness Profiles*/
+/*Responsiveness for Recent News & Profiles*/
+@media screen and (max-width: 800px) {
+    .NewsTableOuter {
+        width: 76%;
+        margin: auto;
+        height: auto;
+        border-radius: 8px;
+        border: 7px ridge CadetBlue;
+        padding: 1em;
+    }
+    .profiles {
+        width: 80%;
+        margin: auto;
+        height: auto;
+        padding: 1em;
+    }
+    
+    .NewsTable, .profilesinner, .linklist {
+        width: 100%;
+        margin: auto;
+        height: auto;
+        display: block;
+    }
+    
+    .newsimg, .left, .iframe{
+        max-width: 100%;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: auto;
+        padding-bottom: 1em;
+        
+    }
+
+    .newsimg img {
+        max-height: 225px;
+        max-width: 225px;
+    }
+    
+    .left img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+    
+    .newsitem, .links{
+        width: auto;
+        padding: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .right{
+        width: auto;
+        padding: 1em 1em 1.4em 1em;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    #newslink {
+        padding: 0.2em;
+    }
+}
+.description { /*most main fonts*/
+    width: 80%;
+    font-weight: normal;
+    color: black;
+    margin: auto;
+    padding: 1em;
+}
+
+
+/*for links*/
+.description a:link, .right a:link, .NewsTable a:link, .links a:link, .home a:link { /*unvisited*/
+    color: SlateGrey;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.description a:visited, .right a:visited, .NewsTable a:visited, .links a:visited, .home a:visited{
+    color: SlateGrey; 
+}
+
+.description a:hover, .right a:hover, .NewsTable a:hover, .links a:hover, .home a:hover{
+    color: CadetBlue;
+    text-decoration: underline;
+}
+
+
+
+.research h3 {
+    font-weight:bold;
+}
+.research img, .positions img{
+    padding: 0.7em;
+    width: 15em;
+    height: auto;
+    position: relative;
+    z-index: -1;
+}
+
+#Pubimg {
+    padding: 0.7em;
+    width: 13em;
+    height: auto;
+    position: relative;
+    z-index: -1;
+}
+
+@media screen and (max-width: 699px) {
+    #Pubimg{
+        display: none;
+    }
+    .research img {
+        display: none;
+    }
+}
+
+
+
+/*Navigation menu*/
+.MenuName { /*The Maritz Lab on normal browser pages*/
+    float: right;
+    color: CadetBlue;
+    font-size: 2.8em;
+    text-align: center;
+    padding: 0.1em 1em 0.1em 0em;
+    font-weight: normal;
+    z-index: 2;
+}
+
+
+.MainMenu { /*normalbrowser header*/
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index:2;
+}
+
+.active {
+    background-color: CadetBlue;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1em 1.2em;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+/*Code for responsiveness*/
+
+.hiddenText{   /*Mobile heading*/
+    color: CadetBlue;
+    font-size: 2em;
+    text-align: center;
+    font-weight: normal;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+.button{   /*Mobile heading*/
+    width:10%;
+    position: absolute;
+    font-size: 20px;
+    padding-top: 0.4em ;
+}
+
+.MenuHeading{   /* Mobile heading The Maritz Lab label*/
+    float: left;
+    color: CadetBlue;
+    font-size: 24px;
+    text-align: center;
+    /*padding: 0.1em 1em 0.1em 0em;*/
+    font-weight: normal;
+    width: 100%;
+    padding: 0.2em 0em;
+}
+
+
+.MobileMenu {
+    visibility: hidden;
+}
+.MainMenu {
+    visibility: visible;
+}
+
+/*  When viewing on mobile displays*/
+
+@media screen and (max-width: 1022px) {
+.MobileMenu{
+    visibility: visible;
+}
+.MainMenu{
+    visibility: hidden
+}
+
+    .overlay {
+        /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+        height: 100%;
+        width: 0;
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        background-color: rgb(0,0,0); /* Black fallback color */
+        background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+        overflow-x: hidden; /* Disable horizontal scroll */
+        transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+        z-index:3;
+        }
+    
+    .overlay-content {
+        position: relative;
+        top: 25%; /* 25% from the top */
+        width: 100%; /* 100% width */
+        text-align: center; /* Centered text/links */
+        margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    }
+    
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+    }
+    
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        position: absolute;
+        font-size: 40px;
+        top: 0px;
+        left: 20px;
+        margin-top: -0.25em;
+    }
+}
+
+@media screen and (max-width:568px) {
+    .overlay .closebtn {
+        left: 2px;
+    }
+}
+
+
+footer {
+    clear: both;
+    position: relative;
+    width: 80%;
+    z-index: 0;
+    margin: auto;
+    padding: 3em 0 2em 0;
+    text-align: center;
+    font-size: 0.94em;
+}
+
+
+
+footer a:link{
+    color: black;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: black;
+}
+
+footer a:hover{
+    color: CadetBlue;
+    text-decoration: underline;
+}
